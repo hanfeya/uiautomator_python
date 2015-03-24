@@ -1,0 +1,25 @@
+# uiautomator_python
+Issue 1:
+
+bash: ./adb: No such file or directory
+
+遇到这样的错误，是由于当前的Linux为64位版本所导致的，安装ia32-libs即可，运行以下命令：
+
+Issue 2:
+sudo apt-get install python-pip
+
+download pip from offical URL:https://pip.pypa.io/en/latest/installing.html
+
+
+Issue 3:
+b407@b407-ThinkPad-T400:~/work/noserunner$ python runtests.py -h
+Traceback (most recent call last):
+  File "runtests.py", line 7, in <module>
+    from reporter import ReporterPlugin
+  File "/home/b407/work/noserunner/reporter.py", line 28, in <module>
+    from client import ReportClient
+  File "/home/b407/work/noserunner/client.py", line 1, in <module>
+    import requests
+ImportError: No module named requests
+
+Need install requests
