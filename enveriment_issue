@@ -23,3 +23,4 @@ Traceback (most recent call last):
 ImportError: No module named requests
 
 Need install requests
+sudo pip install requests
